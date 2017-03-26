@@ -41,7 +41,7 @@ public class ShellSort {
 			
 			for(int i=feet;i<n;i++){
 				int index=i;	//index是选取对象的脚标,下面的index-feet是被比较对象的脚标
-				while(index>=feet){
+				while(index>=feet){	//这个while循环保证了只要选取对象脚标仍大于步长就会继续进行比较
 					if(arr[index-feet]>arr[index]){
 						swap(arr,index-feet,index);
 						index=index-feet;	//如果被比较对象比选取对象大则互换了位置，因此本轮选取对象的脚标变化了，由index变成了index-feet
