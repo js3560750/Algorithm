@@ -9,8 +9,31 @@ public class SelectSort {
 		//测试用例
 		int[] test={3,4,6,1,9,0,5};
 		
-		System.out.println(Arrays.toString(mySort(test)));
+		System.out.println(Arrays.toString(mySort2(test)));
 
+	}
+	
+	/**
+	 * 选择排序
+	 * 更简单的实现方法
+	 * @param arr
+	 * @return
+	 */
+	private static int[] mySort2(int[] arr) {
+		
+		//注意两个for循环的初值和判定条件
+		for(int i=0;i<arr.length-1;i++) {
+			
+			for(int j=i+1;j<arr.length;j++) {
+				
+				if(arr[i]>arr[j]) {
+					int temp=arr[i];
+					arr[i]=arr[j];
+					arr[j]=temp;
+				}
+			}
+		}
+		return arr;
 	}
 	
 	
@@ -56,5 +79,6 @@ public class SelectSort {
 		
 		return arr;
 	}
+
 
 }
