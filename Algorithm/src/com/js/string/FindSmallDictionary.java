@@ -51,7 +51,9 @@ public class FindSmallDictionary {
 			String s3 = "abcdfg"; 
 			String s4 = "1bcdfg"; 
 			String s5 = "cdfg"; 
+			String s6 = "bbbb";
 			System.out.println( s1.compareTo(s2) ); // -1 (前面相等,s1长度小1) 
+			System.out.println( s1.compareTo(s6) ); // -1 (第一个不一样，只比较第一个，a比b小一位，所以是-1) 
 			System.out.println( s1.compareTo(s3) ); // -3 (前面相等,s1长度小3) 
 			System.out.println( s1.compareTo(s4) ); // 48 ("a"的ASCII码是97,"1"的的ASCII码是49,所以返回48) 
 			System.out.println( s1.compareTo(s5) ); // -2 ("a"的ASCII码是97,"c"的ASCII码是99,所以返回-2)

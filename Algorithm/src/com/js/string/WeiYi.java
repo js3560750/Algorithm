@@ -25,6 +25,6 @@ public class WeiYi {
 	
 	public static void main(String[] args) {
 		String s="ABCDEF";
-		System.out.println(myWeiYi(s, 3).toString());
+		System.out.println(myWeiYi(s, 3));
 	}
 }

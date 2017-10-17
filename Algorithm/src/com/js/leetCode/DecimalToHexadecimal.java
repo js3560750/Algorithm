@@ -14,6 +14,7 @@ public class DecimalToHexadecimal {
 		
 		//int型有32位，4位转一个16进制，因此要转8次
 		for(int i=0;i<8;i++) {
+			//取最右边4位
 			int temp = num & 15;//0000-0000-0000-0000-0000-0000-0000-1111=15
 			if(temp>9) {
 				sb.append((char)(temp-10+'A'));	//这里char转型
